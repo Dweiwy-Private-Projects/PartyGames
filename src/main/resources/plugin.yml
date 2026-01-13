@@ -1,0 +1,14 @@
+name: PartyGames
+version: '${project.version}'
+main: me.siwannie.partygames.PartyGames
+author: _ImSiwan
+api-version: '1.20'
+
+commands:
+  partygames:
+    description: Main PartyGames command
+    usage: /<command>
+  pg:
+    description: Shortcut command for PartyGames
+    usage: /<command>
+

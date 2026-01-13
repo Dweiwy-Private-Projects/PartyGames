@@ -1,0 +1,94 @@
+game_explanations:
+  shearmadness: |-
+    §6Objective:§f Shear the most §eColored Sheep§f for points!
+    §bHow to Play:
+    §7- §fFind and right-click §eColored Sheep§f with shears.
+    §7- §fEach shear grants §e1 point§f.
+    §7- §fQuickly shear §e10 sheep§f (within ~§e3 seconds§f each) for a §6Streak Bonus§f of §e+5 points§f!
+    §bWarning:
+    §7- §fAvoid §7Black Sheep§f - they might have surprising effects!
+
+  colorchaos: |-
+    §6Objective:§f Stand on the announced §bBlock Color§f before time runs out!
+    §bHow to Play:
+    §7- §fA §bBlock Color§f is announced on your screen.
+    §7- §fQuickly move to a matching colored block on the platform.
+    §7- §fYou have about §e4 seconds§f to find the correct color each round!
+    §bScoring:
+    §7- §fCorrect Color: §e+5 points§f.
+    §7- §fWrong Color or Too Slow: §e-2 points§f (penalty).
+
+  bombdefusal: |-
+    §6Objective:§f Find and §eDefuse§f hidden §6TNT Bombs§f by memorizing patterns!
+    §bHow to Play:
+    §7- §fYou'll receive a §bDefusal Key§f.
+    §7- §fRight-click §6TNT§f with the key to start defusal.
+    §7- §fA pattern of colored blocks will appear. §eMemorize it quickly!
+    §7- §fReplicate the pattern in the GUI that follows.
+    §bScoring (Points per defusal):
+    §7- §eEasy: +5§f, §eMedium: +10§f, §6Hard: +20§f.
+    §7- §fFailed Defusal Penalty: §e-5 points§f.
+
+  targetterror: |-
+    §6Objective:§f Shoot §bMoving Targets§f with your bow for points!
+    §bHow to Play:
+    §7- §fUse your bow (infinite arrows) to hit the various targets.
+    §bScoring Examples:
+    §7- §eSmall Targets (Chickens): +10 points§f.
+    §7- §eMedium Targets (Pigs): +5 points§f.
+    §7- §6Large Targets (Cows): +2 points§f.
+    §bStreak Bonus:
+    §7- §fHit §e5 targets§f in a row for a §ex2.0 point multiplier§f!
+    §bWarning:
+    §7- §fDo NOT shoot §7Iron Golems§f! Penalty: §e-25 points§f.
+
+  pillarsoffortune: |-
+    §6Objective:§f Be the §elast player standing§f by building your pillar high!
+    §bPhase 1 - Build Up (2 mins):
+    §7- §fGet random items every §e3 seconds§f.
+    §7- §fBuild pillar §estraight up§f; §e+5 points§f per new Y-level.
+    §7- §fDropping items: §e-3 point§f penalty!
+    §bPhase 2 - Survive & Fight (3 mins):
+    §7- §fBuild anywhere! §6PvP is ON!
+    §7- §e+50 points§f per kill.
+    §7- §e+1 point§f per second survived.
+    §bWinning Bonus:
+    §7- §fLast player standing: extra §e+100 points§f!
+
+  elytragauntlet: |-
+    §6Objective:§f Glide through all §bSky Rings§f & finish the fastest!
+    §bHow to Play:
+    §7- §fYou get an Elytra; double-jump to glide.
+    §7- §fNavigate through all rings in the course.
+    §bScoring (by finish position):
+    §7- §61st Place: §e+30 points§f.
+    §7- §e2nd Place: +25 points§f.
+    §7- §f3rd Place: +20 points§f.
+    §7- §fOther Finishers: +5 points§f.
+
+  echoesofthedeep: |-
+    §6Objective:§b Dive to §ecollect treasures§b! Manage your §bOxygen§b.
+    §bHow to Play:
+    §7- §fDive for glowing items; right-click to collect.
+    §7- §fTreasures give points (e.g., §ePearls ~10§f, §6Medallions ~15§f).
+    §7- §fSome items are §7Cursed§f (negative points!).
+    §bOxygen & Hazards:
+    §7- §fOxygen depletes underwater. Surface or find §bVitality Orbs§f.
+    §7- §fDrowning Penalty: §e-5 pts§f. Damage Penalty: §e-3 pts§f.
+    §7- §fPower-ups: §6Clarity (Vision)§f, §bSwiftness (Speed)§f.
+    §7- §fAvoid hostile §7sea creatures§f! (Treasure points vary).
+
+  zombieoutbreak: |-
+    §6Objective:§f §aHumans§f survive, §cZombies§f infect!
+    §bHumans:
+    §7- §fHit by zombie? You're §cINFECTING§f (~§e15s§f to turn). More hits = faster!
+    §7- §fFind §6Golden Apple§f power-ups to §aCURE§f yourself.
+    §7- §fEarn §e+1 point§f per 10 seconds survived.
+    §bZombies:
+    §7- §fYou're faster! Hit humans to infect. Each hit speeds their infection.
+    §7- §fFind §6Sugar§f for an §cAdrenaline Rush§f (speed boost).
+    §7- §fEarn §e+15 points§f per human fully infected.
+    §bWinning:
+    §7- §fHumans survive timer: Team Bonus §e+25pts§f each.
+    §7- §fLast Human standing (win/timer): §6+50pts§f bonus!
+    §7- §fZombies infect all: Team Bonus §e+20pts§f each.

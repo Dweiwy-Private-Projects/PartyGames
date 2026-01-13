@@ -1,0 +1,556 @@
+# ===== Games Configuration =====
+games:
+  # ===== ShearMadness Settings =====
+  shearmadness:
+    icon: SHEARS
+    duration: 300
+    max_active_sheep: 75
+    spawn_area:
+      world: Siwan
+      corner1:
+        x: -250
+        y: -60
+        z: 57
+      corner2:
+        x: -265
+        y: -60
+        z: 72
+    points:
+      per_shear: 1
+      streak_bonus: 5
+      streak_length: 10
+    streak_rules:
+      fast_shear_streak_reset_cooldown_ms: 0
+      streak_timeout_ms: 3000
+    teleport:
+      world: Siwan
+      x: -260.4580009566743
+      y: -60.0
+      z: 63.0295304324234
+      yaw: 177.15613
+      pitch: 6.6265163
+  # ===== ColorChaos Settings =====
+  colorchaos:
+    icon: RED_WOOL
+    duration: 240
+    round_interval_seconds: 7
+    decision_time_seconds: 4
+    points:
+      correct: 5
+      wrong: -2
+    wool_colors:
+      - RED_WOOL
+      - BLUE_WOOL
+      - GREEN_WOOL
+      - YELLOW_WOOL
+      - ORANGE_WOOL
+      - PURPLE_WOOL
+      - LIME_WOOL
+      - CYAN_WOOL
+      - MAGENTA_WOOL
+      - PINK_WOOL
+    arena:
+      world: Siwan
+      corner1:
+        x: 0
+        y: 64
+        z: 0
+      corner2:
+        x: 20
+        y: 64
+        z: 20
+    effects:
+      color_announce_title:
+        enabled: true
+        fade_in_ticks: 10
+        stay_ticks: 50
+        fade_out_ticks: 10
+      highlight_correct_color_particles:
+        enabled: true
+        particle_type: HAPPY_VILLAGER
+        count_per_block: 5
+    teleport:
+      world: Siwan
+      x: -257.6939878276441
+      y: -60.0
+      z: 66.33225750550125
+      yaw: 178.80603
+      pitch: 4.9765224
+  # ===== BombDefusal Settings =====
+  bombdefusal:
+    icon: TNT
+    duration: 360
+    points:
+      easy: 5
+      medium: 10
+      hard: 20
+      fail_penalty: -5
+    difficulty_chances:
+      easy: 50
+      medium: 35
+    pattern_length:
+      easy: 3
+      medium: 5
+      hard: 7
+    memorize_time:
+      easy: 100
+      medium: 80
+      hard: 60
+    answer_time:
+      easy: 200
+      medium: 160
+      hard: 120
+    region:
+      world: Siwan
+      corner1:
+        x: -291
+        y: -60
+        z: 73
+      corner2:
+        x: -308
+        y: -59
+        z: 56
+    teleport:
+      world: Siwan
+      x: -298.0965964547166
+      y: -60.0
+      z: 76.00404431783882
+      yaw: -177.59381
+      pitch: 10.526516
+    bomb_settings:
+      block_to_replace: BEDROCK
+      defused_bomb_material: BEDROCK
+      bomb_respawn_delay_seconds: 15
+      key_material: OMINOUS_TRIAL_KEY
+      key_name: '&c&lDefusal Key'
+      key_lore:
+        - '&7Right-click a placed bomb (TNT)'
+        - '&7to attempt defusal.'
+        - '&8This key is bound to you.'
+  # ===== TargetTerror Settings =====
+  targetterror:
+    icon: BOW
+    duration: 300
+    max_simultaneous_targets: 15
+    points_and_mobs:
+      small:
+        points: 10
+        mobs:
+          - CHICKEN
+          - RABBIT
+          - SILVERFISH
+          - BAT
+          - ENDERMITE
+      medium:
+        points: 5
+        mobs:
+          - SPIDER
+          - CAVE_SPIDER
+          - PIG
+          - SHEEP
+      large:
+        points: 2
+        mobs:
+          - ZOMBIE
+          - SKELETON
+          - CREEPER
+          - COW
+          - VINDICATOR
+      penalty_large:
+        points: -25
+        mobs:
+          - IRON_GOLEM
+    streak_bonus:
+      multiplier: 2.0
+      length: 5
+    spawn_corners:
+      world: Siwan
+      corner1:
+        x: -250
+        y: -60
+        z: 68
+      corner2:
+        x: -265
+        y: -56
+        z: 57
+    teleport:
+      world: Siwan
+      x: -258.13745337929066
+      y: -60.0
+      z: 75.72443427734383
+      yaw: 177.15613
+      pitch: 6.6265163
+  # ===== PillarsOfFortune Settings =====
+  pillarsoffortune:
+    icon: SOUL_LANTERN
+    phase1_duration: 120
+    phase2_duration: 180
+    item_interval: 3
+    all_items: true # or false
+    starting_block: BEDROCK
+    points:
+      points_per_y_increase: 5
+      points_per_second: 1
+      points_per_kill: 50
+      last_man_standing_bonus_points: 100
+      points_penalty_per_drop: 3
+    arena:
+      world: Siwan # Your world name
+      corner1:
+        x: -244
+        y: -60 # Set to a Y level at or just above your bedrock floor
+        z: 72
+      corner2:
+        x: -229
+        y: -59 # Set to the Y level of your bedrock floor
+        z: 57
+    random_items: # Used only if all_items is false
+      - OAK_LOG
+      - DIRT
+      - COBBLESTONE
+      - WHITE_WOOL
+      - GLASS
+      - LADDER
+      - SAND
+      - GRAVEL
+      - WATER_BUCKET
+      - SNOWBALL
+      - BOW
+      - ARROW
+    teleport:
+      world: Siwan
+      x: -236.44446811508558
+      y: -60.0
+      z: 76.34909629258802
+      yaw: -177.74098
+      pitch: 15.599987
+  # ===== ElytraGauntlet Settings =====
+  elytragauntlet:
+    icon: ELYTRA
+    duration: 420
+    points:
+      first: 30
+      second: 25
+      third: 20
+      others_start: 5
+  # ===== ZombieOutbreak Settings =====
+  zombieoutbreak:
+    icon: ZOMBIE_HEAD
+    duration: 300 # Total game duration in seconds (e.g., 5 minutes)
+    min_players: 2
+    initial_zombie_count: 1
+    initial_zombie_alpha_buff: true # If true, initial zombies get buffs from initial_zombie_settings
+
+    points: # Points awarded
+      zombie_infection_bonus: 15 # Points for a zombie successfully turning a human
+      human_survival_per_10_seconds: 1 # Points for a human for every 10 seconds they remain uninfected
+      last_human_standing_bonus: 50 # Bonus if game ends (by time or elimination) with only 1 human survivor
+      human_time_out_survival_bonus: 25 # Bonus for all humans if they survive until the timer runs out
+      zombie_team_win_bonus: 20 # Bonus for each zombie if all humans are infected before time runs out
+
+    arena:
+      world: Siwan # Primary world for the game
+      # corner1 and corner2 define the playable area for random spawning and power-up scanning.
+      corner1:
+        x: -223
+        y: -60
+        z: 72
+      corner2:
+        x: -208 # Corrected - was 208, assuming -208
+        y: -56
+        z: 57
+      # human_spawn_point and zombie_spawn_point are now primarily FALLBACKS if random spawning fails,
+      # or can be used as reference points for other calculations if needed.
+      # Players will be spawned randomly within the corner1-corner2 bounds.
+      human_spawn_point: # Fallback spawn if random spawning fails
+        world: Siwan
+        x: 0
+        y: -64
+        z: 0
+        yaw: 0
+        pitch: 0
+      zombie_spawn_point: # Fallback spawn
+        world: Siwan
+        x: 10
+        y: -64 # Corrected - was -6464, assuming typo
+        z: 10
+        yaw: 180
+        pitch: 0
+
+    spectator_spawn: # Players are teleported here after elimination or if joining mid-game
+      world: Siwan
+      x: 0
+      y: -64
+      z: 0
+      yaw: 0
+      pitch: 30
+
+    infection_mechanics:
+      base_infection_duration_seconds: 15 # Time for 1st hit to turn human
+      acceleration_per_hit_seconds: 3 # Each extra zombie hit reduces remaining infection time by this much
+      infecting_potion_effect: SLOW,0 # Effect string: TYPE,AMPLIFIER (applied while infecting, permanent until cured/turned)
+      # Examples: "NAUSEA,0", "WEAKNESS,0", "MINING_FATIGUE,1"
+      zombie_base_potion_effect: NIGHT_VISION,0 # TYPE,AMPLIFIER (permanent for all zombies)
+
+    zombie_settings: # Base loadout and effects for ALL zombies
+      helmet: LEATHER_HELMET,COLOR:40_80_40 # Material,COLOR:R_G_B (0-255 for RGB) or just "ZOMBIE_HEAD"
+      chestplate: LEATHER_CHESTPLATE,COLOR:40_80_40
+      leggings: LEATHER_LEGGINGS,COLOR:40_80_40
+      boots: LEATHER_BOOTS,COLOR:40_80_40
+      # weapon: "STONE_SWORD,NAME:&cClaws,UNBREAKABLE:true" # Zombies are weaponless by default for infection mechanics
+      # If a weapon is given, infection is still by touch (hit event).
+      potion_effects: # List of "POTION_TYPE,AMPLIFIER,DURATION_SECONDS" (-1 for DURATION_SECONDS for permanent)
+        - SPEED,0,-1
+        - JUMP,0,-1
+      glowing: false
+      max_health_boost: 0 # Additional health points (2 = 1 heart) added to base 20 health.
+
+    initial_zombie_settings: # Applied ON TOP of regular zombie_settings if initial_zombie_alpha_buff is true
+      # Example: Make initial zombies slightly tougher/faster
+      # weapon_enchantments: # List of "ENCHANTMENT_TYPE,LEVEL" to add to the base zombie weapon (if they have one)
+      #   - "DAMAGE_ALL,1" # Sharpness I
+      potion_effects:
+        - SPEED,1,-1
+        - INCREASE_DAMAGE,0,-1
+      max_health_boost: 4 # Additional health points (2 hearts) added ON TOP of health set by zombie_settings.
+      glowing: true # Make initial zombies glow to stand out
+
+    human_settings:
+      starting_kit: # List of item strings: "MATERIAL,AMOUNT,NAME:&cName,LORE:Line1|Line2,ENCHANT:TYPE_LVL,UNBREAKABLE:bool"
+        - COOKED_BEEF,5
+        - WOODEN_SWORD,1,NAME:&aSurvivor's Stick,ENCHANT:KNOCKBACK_1
+      # - "SNOWBALL,5" # Example for throwable distraction/pushback
+      potion_effects_on_start: # Applied once when tagged as human at game start
+        - REGENERATION,0,5
+      # - "SPEED,0,3" # Short speed burst at start
+
+    powerups:
+      enabled: true
+      max_active_simultaneously: 3 # How many power-ups can be active in the arena at once
+      scan_arena_for_spawner_blocks: true # If true, scans blocks defined in spawner_block_materials within arena corners.
+      # If false, uses only explicit_spawner_locations.
+      spawner_block_materials: # Materials on the ground that can host a power-up floating above
+        - BEACON
+        - EMERALD_BLOCK
+        - DIAMOND_BLOCK
+        - GOLD_BLOCK
+      explicit_spawner_locations: # List of "world,x,y,z" for specific powerup spawn block locations (used if scan_arena_for_spawner_blocks is false)
+        - your_game_world,10,65,20
+        - your_game_world,-15,68,-10
+      item_spawn_height_offset: 2.0 # How high above the spawner block the item display floats
+      respawn_delay_seconds: 30 # How long after a power-up is picked up before another can spawn at that spot (or a new one elsewhere)
+      pickup_radius_squared: 4.5 # Player needs to be within ~2.1 blocks (sqrt(4.5)) to pick up
+      types:
+        cure_human:
+          enabled: true
+          item_material: GOLDEN_APPLE
+          item_name: '&aInfection Cure'
+          target_team: HUMAN  # Add this: HUMAN, ZOMBIE, or ANY (defaults to ANY if missing)
+          item_lore:
+            - '&7Instantly CURES your infection!'
+            - '&7Grab it if you''re human!'
+          display_effect_on_stand: VILLAGER_HAPPY
+          spawn_weight: 40
+        zombie_temporary_speed:
+          enabled: true
+          item_material: SUGAR
+          item_name: '&cZombie Adrenaline'
+          target_team: ZOMBIE # Add this
+          item_lore:
+            - '&7Grants a burst of speed!'
+            - '&7Only for zombies!'
+          display_effect_on_stand: FLAME
+          pickup_potion_effect: SPEED,1,10
+          spawn_weight: 30
+        human_temporary_invisibility:
+          enabled: true
+          item_material: GLASS_BOTTLE
+          item_name: '&bStealth Elixir'
+          target_team: HUMAN # Add this
+          item_lore:
+            - '&7Become invisible for a short time!'
+          display_effect_on_stand: SPELL_WITCH
+          pickup_potion_effect: INVISIBILITY,0,8
+          spawn_weight: 20
+    teleport:
+      world: Siwan
+      x: -215.7253800653882
+      y: -60.0
+      z: 77.0039358671776
+      yaw: -177.74408
+      pitch: 20.576525
+  # ===== EchoesOfTheDeep Settings =====
+  echoesofthedeep:
+    icon: TRIDENT
+    duration: 420
+    teleport:
+      world: Siwan
+      x: -279.0720412958841
+      y: -18.0
+      z: 64.33152805126771
+      yaw: -164.69997
+      pitch: 83.84999
+    vision_reduction:
+      enabled: true
+      effect_type: DARKNESS
+      amplifier: 0
+      apply_underwater_only: true
+    treasures:
+      max_active_base: 5
+      max_active_per_player: 2
+      max_total_active_cap: 30
+      min_spawn_distance_from_player: 10
+      collection_radius: 2.0
+      min_distance_between_treasures: 10
+      spawn_area:
+        corner1:
+          x: -350
+          y: -60
+          z: 20
+        corner2:
+          x: -250
+          y: -30
+          z: 120
+      types:
+        - display_name: §b§lGlimmering Pearl
+          material: QUARTZ
+          points: 10
+        - display_name: §6Ancient Medallion
+          material: GOLD_INGOT
+          points: 15
+        - display_name: §3Lost Trident Shard
+          material: PRISMARINE_SHARD
+          points: 20
+        - display_name: §bDeep Sea Crystal
+          material: DIAMOND
+          points: 25
+        - display_name: §7Forgotten Goblet
+          material: IRON_INGOT
+          points: 12
+        - display_name: §eGlowing Dust
+          material: GLOWSTONE_DUST
+          points: 8
+        - display_name: §dMystic Nautilus Shell
+          material: NAUTILUS_SHELL
+          points: 18
+        - display_name: §c§lCursed Kelp Knot
+          material: KELP
+          points: -10
+        - display_name: §2Anchor of Misfortune
+          material: ANVIL
+          points: -20
+    power_ups:
+      enabled: true
+      max_active: 2
+      min_spawn_distance_from_game_spawn: 60
+      max_spawn_distance_from_game_spawn: 120
+      min_distance_between_powerups: 25
+      collection_radius: 2.5
+      types:
+        - type: OXYGEN_BOOST
+          display_name: §b§lVitality Orb
+          material: HEART_OF_THE_SEA
+          message: §bOxygen levels fully restored!
+        - type: ILLUMINATION
+          display_name: §e§lOrb of Clarity
+          material: SEA_LANTERN
+          message: §eThe murky depths become clear!
+          effect_duration_seconds: 45
+          effect_amplifier: 0
+        - type: SPEED_BOOST
+          display_name: §9§lOrb of Swiftness
+          material: PRISMARINE_CRYSTALS
+          message: §9You glide through the water with ease!
+          effect_duration_seconds: 30
+          effect_amplifier: 0
+    points:
+      damage_penalty: -3
+      checkpoint_bonus: 20
+      drowning_respawn_penalty: -5
+    oxygen:
+      depletion_amount: 2
+      recovery_amount: 5
+      interval_ticks: 20
+    spawn_mobs:
+      enabled: true
+      types:
+        - DROWNED
+        - GUARDIAN
+      interval_ticks: 200
+      max_active: 10
+
+# ===== General Plugin Settings =====
+settings:
+  transition_buffer_seconds: 5
+  game_queue:
+    - targetterror
+    - echoesofthedeep
+    - shearmadness
+    - colorchaos
+    - bombdefusal
+    - pillarsoffortune
+    - elytragauntlet
+    - zombieoutbreak
+
+# ===== AdminGUI Settings =====
+admin_gui:
+  title: '&5&lPartyGames Admin Panel'
+  rows: 6
+  filler_item_material: BLACK_STAINED_GLASS_PANE
+  bottom_row_filler_material: YELLOW_STAINED_GLASS_PANE
+  game_item:
+    name_format: '&6%game_name%'
+    lore_status_enabled: '&aStatus: ENABLED'
+    lore_status_disabled: '&cStatus: DISABLED'
+    lore_instruction_toggle: '&3Shift-Click: &bToggle Enable/Disable'
+    lore_instruction_edit: '&3Left-Click: &bEdit Game Settings'
+    lore_header_current_settings: '&6Current Settings (from config):'
+    lore_duration_format: '&7Duration: &e%duration% seconds'
+    lore_no_points_settings: '&7No specific points settings.'
+    lore_points_entry_format: '&7%key%: &e%value%'
+    lore_streak_rules_header: '&6Streak Rules:'
+    lore_streak_bonus_header: '&6Streak Bonus:'
+    lore_streak_entry_format: '&7 %key%: &e%value%'
+  general_settings_item:
+    material: BELL
+    name: '&b&lPlugin & General Settings'
+    lore:
+      - '&7Click to edit global PartyGames settings:'
+      - '&7- Transition Buffer Seconds'
+      - '&7- Command Blocker (Enable/Disable)'
+      - '&7- Chat Formatting (Enable/Disable)'
+      - '&7- View Game Queue'
+
+# ===== Listener Settings =====
+listeners_settings:
+  player_join:
+    message_game_running: ' '
+    message_game_in_buffer: ' '
+    message_no_game_active: ' '
+  command_blocker:
+    enabled: true
+    blocked_command_prefixes:
+      - /spawn
+      - /home
+      - /tpa
+      - /tpaccept
+      - /tpdeny
+      - /sethome
+      - /warp
+      - /lobby
+      - /hub
+      - /fly
+      - /ehome
+      - /etpa
+      - /ewarp
+    bypass_permission: partygames.admin.bypasscommands
+    message_command_blocked: '&cYou cannot use the command &e%command% &cduring a PartyGame!' # Fixed multi-line issue
+  chat_tweaks:
+    format_enabled: true
+    format_string_game: '§8[§e%game_name%§8] §f%1$s§7: §f%2$s'
+    format_string_buffer: '§8[§bNext: %next_game_name%§8] §f%1$s§7: §f%2$s'
+    cooldown_enabled: true
+    cooldown_seconds: 3
+    cooldown_bypass_permission: partygames.chat.bypasscooldown
+    message_cooldown_actionbar: '&cChat is on cooldown! Please wait %time_left%s'
+disabled-games:
